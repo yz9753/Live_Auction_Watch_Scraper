@@ -52,8 +52,9 @@ def get_watches(page_count):
         return []
 
 def watch_shortlist(page_count, target_price, plus_minus):
+    
     watches = get_watches(page_count = page_count)
-    # shortlist = {}
+    
     shortlist_df = pd.DataFrame()
 
     price_lower_bound = max(0, target_price - plus_minus)
