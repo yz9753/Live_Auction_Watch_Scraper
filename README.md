@@ -11,7 +11,7 @@ This project is a web scraper that collects data on watches names and prices fro
 
 ## Chosen Website 
 
-The website we are using in this project is Liveauctioneers.com (http://Liveauctioneers.com). This website is selected because: 
+The website we are using for this project is Liveauctioneers.com (http://Liveauctioneers.com). This website is selected because: 
 1. It is authentic and provides up-to-date information about ongoing auctions 
 2. It offers a huge collection of watches, featuring a wide range of brands and consistently updates its inventory 
 3. The website structure is suitable for web scraping and its watch listings are publicly accessible, aligning with ethical scraping practices. 
