@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
+import time
 
 # Create a function that scrapes the LiveAuctioneers' watch auction listings
 def get_watches(page_count):
@@ -18,7 +19,10 @@ def get_watches(page_count):
         for n in range(1, page_count+1):
             # Construct the URL for each page of the watch listings. Replace for different products
             url = f"https://www.liveauctioneers.com/c/watches/97/?page={n}"
-
+            
+            # implement rate limiting of 1 second for each request  
+            time.sleep(1)  
+            
             # Send a GET request to the URL
             response = requests.get(url)
 
